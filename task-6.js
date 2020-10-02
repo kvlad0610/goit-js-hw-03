@@ -1,6 +1,19 @@
 function calculateTotalPrice(array, prop) {
   "use strict";
-  // Write code under this line
+
+  let allProdcuts = 0;
+  const productName = prop;
+  console.log(productName);
+  for (const arr of array) {
+    console.log(arr);
+
+    if (arr.name === productName) {
+      console.log("нашол");
+      allProdcuts += arr.price * arr.quantity;
+      console.log(allProdcuts);
+    }
+  }
+  return allProdcuts;
 }
 
 // Объекты и ожидаемый результат
